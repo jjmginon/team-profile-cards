@@ -49,6 +49,16 @@ h1 {
     padding: 0.5rem;
 }
 
+h1::before {
+    content: '💻 ';
+    font-size: 2rem;
+}
+
+h1::after {
+    content: ' 💻';
+    font-size: 2rem;
+}
+
 nav {
     background-color: #161b22;
     padding: 0.5rem;
@@ -58,14 +68,16 @@ nav {
     justify-content: space-evenly;
 }
 
-nav a,
-nav a:visited {
+nav a:any-link {
     color: #e6edf3;
 }
 
-nav a:hover,
-nav a:focus {
+nav :is(a:hover, a:focus) {
     color: #79c0ff;
+}
+
+nav a:active {
+    color: #ff7b72;
 }
 
 main {
@@ -93,6 +105,11 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.card:target {
+    border: 5px solid #1f6feb;
+    font-weight: bolder;
 }
 
 .card figure {
