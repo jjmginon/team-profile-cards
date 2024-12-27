@@ -49,16 +49,6 @@ h1 {
     padding: 0.5rem;
 }
 
-h1::before {
-    content: '💻 ';
-    font-size: 2rem;
-}
-
-h1::after {
-    content: ' 💻';
-    font-size: 2rem;
-}
-
 nav {
     background-color: #161b22;
     padding: 0.5rem;
@@ -186,6 +176,16 @@ footer {
         display: none;
     }
 
+    h1::before {
+        content: '💻 ';
+        font-size: 2rem;
+    }
+
+    h1::after {
+        content: ' 💻';
+        font-size: 2rem;
+    }
+
     .card {
         width: 33.33%;
     }
@@ -225,6 +225,11 @@ footer {
 @media (min-width: 1400px) {
     h1 {
         font-size: 4rem;
+    }
+
+    h1::before,
+    h1::after {
+        font-size: 3rem;
     }
 
     .card {
