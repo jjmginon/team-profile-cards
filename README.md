@@ -1,5 +1,7 @@
 # Team Profile Cards
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/51b61e20-41c3-49e7-af96-fd35400ea53c/deploy-status)](https://app.netlify.com/sites/team-profile-cards/deploys)
+
 Welcome to the **Team Profile Cards** project repository. This project showcases the application of HTML and CSS in designing responsive profile cards.
 
 ## Table of Contents
